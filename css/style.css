@@ -36,6 +36,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+h4,
 ul{
   margin: 0;
   padding: 0;
@@ -60,10 +64,12 @@ a {
 
 /* -----------------------------------стили Хедера */
 
-.heder-contyner{
-  width: 1230px;
+.heder-conteyner{
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+
+  background-color: lightcoral;
 }
 
 .logo {
@@ -198,6 +204,13 @@ button {
   line-height: 1.9;
   letter-spacing: 0.06em;
   font-family: inherit;
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+   width: 200px;
+  height: 50px;
+  
 }
 
 .advantage-title{
