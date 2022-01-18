@@ -193,9 +193,7 @@ button {
 }
 
 .hero-title{
-  max-width: 696px;
-  text-align: center;
-  
+
   color: #ffffff;
 
   font-weight: 900;
@@ -208,6 +206,8 @@ button {
 }
 
 .hero-button{
+  margin-top: 20px;
+
   background-color: var(--accent);
   color: #ffffff;
 
@@ -224,7 +224,31 @@ button {
   height: 50px;
   
 }
+/* -----------Преимущества компании */
 
+/* .advantage{
+  background-color: #E5E5E5;
+} */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantage-list{
+  background-color: burlywood;
+  margin: 94px auto;
+  width: 1200px;
+  
+}
 .advantage-title{
 
   font-size: 14px;
@@ -240,17 +264,41 @@ button {
   letter-spacing: 0.03em;
 }
 
-.work,
-.team{
 
+/* ------------------чем мы занимаемся */
+
+.work{
+  background-color: limegreen;
+  margin: 94px auto;
+  width: 1200px;
+  
+}
+
+.our_work,
+.our_team{
+ 
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
-.team-title{
+/* -----------------наша команда */
 
+.team{
+  background-color: limegreen;
+  margin: 94px auto;
+  width: 1200px;
+}
+
+.team_list{
+  display: inline-block;
+  text-align: center;
+
+}
+
+
+.team-title{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
