@@ -114,29 +114,6 @@ a {
   letter-spacing: 0.02em;
 }
 
-/* ---------------------------Подвал */
-footer {
-  background-color: var(--third-background-color);
-}
-
-.logo-footer{
-  color: #ffffff;
-}
-
-.footer-main-link{
-  color: #ffffff;
-}
-
-.footer-link{
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-list {
-
-  font-size: 14px;
-  line-height: 1.7;
-  font-style: normal;
-}
 
 
 /* стили main portfolio*/
@@ -172,6 +149,9 @@ button {
 .cards-text{
   color: var(--primary-text-color);
 }
+
+
+
 
 /*----------------- стили main index */
 
@@ -226,9 +206,9 @@ button {
 }
 /* -----------Преимущества компании */
 
-/* .advantage{
-  background-color: #E5E5E5;
-} */
+.advantage{
+  background-color: #ffffff;
+}
 
 .visually-hidden {
   position: absolute;
@@ -310,4 +290,36 @@ button {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+}
+
+
+
+/* ---------------------------Подвал */
+footer {
+  background-color: var(--third-background-color);
+  padding: 60px;
+}
+
+.footer_box{
+  margin: 0 auto;
+  width: 1200px
+}
+
+.logo-footer{
+  color: #ffffff;
+}
+
+.footer-main-link{
+  color: #ffffff;
+}
+
+.footer-link{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-list {
+
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
 }
