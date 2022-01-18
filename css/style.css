@@ -62,7 +62,7 @@ a {
 }
 
 
-/* -----------------------------------стили Хедера */
+/* -------------------------стили Хедера */
 
 .heder-conteyner{
   width: 1200px;
@@ -114,7 +114,7 @@ a {
   letter-spacing: 0.02em;
 }
 
-/* Подвал */
+/* ---------------------------Подвал */
 footer {
   background-color: var(--third-background-color);
 }
@@ -143,8 +143,6 @@ footer {
 main {
   background-color: var(--second-background-color);
 }
-
-/* .page-title {} */
 
 .button-list {
   color: var(--title-text-color);
@@ -175,21 +173,35 @@ button {
   color: var(--primary-text-color);
 }
 
-/* стили main index */
+/*----------------- стили main index */
 
 .hero{
   background-color: #2F303A;
 }
 
-.hero-title{
+.hero-conteyner{
+  text-align: center;
 
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 600px ;
+  padding: 200px 0;
+
+
+  background-color: lightgreen;
+
+}
+
+.hero-title{
+  max-width: 696px;
+  text-align: center;
+  
   color: #ffffff;
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   
