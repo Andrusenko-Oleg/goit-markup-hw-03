@@ -14,8 +14,19 @@
 /* акцент #2196F3 */
 /* цвет футера #2F303A */
 
+html{
+  box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after{
+  box-sizing: inherit;
+}
 
 body {
+  margin: 0;
+
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   
@@ -23,6 +34,11 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
 }
 
 .list {
@@ -42,7 +58,14 @@ a {
 }
 
 
-/* стили Хедера */
+/* -----------------------------------стили Хедера */
+
+.heder-contyner{
+  width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .logo {
   color: var(--title-text-color);
   
