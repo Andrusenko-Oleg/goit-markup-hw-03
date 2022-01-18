@@ -40,7 +40,8 @@ h1,
 h2,
 h3,
 h4,
-ul{
+ul,
+p{
   margin: 0;
   padding: 0;
 }
@@ -251,7 +252,12 @@ button {
   background-color: limegreen;
   margin: 94px auto;
   width: 1200px;
-  
+}
+
+.work-list > li{
+  margin-top: 50px;
+
+  display: inline-block;
 }
 
 .our_work,
@@ -273,7 +279,7 @@ button {
 
 .team_list{
   display: inline-block;
-  text-align: center;
+  margin-top: 50px;
 
 }
 
@@ -283,6 +289,8 @@ button {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+
+  margin-top: 30px;
 }
 
 .team-text{
