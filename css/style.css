@@ -24,6 +24,10 @@ html{
   box-sizing: inherit;
 }
 
+img{
+  display: block;
+}
+
 body {
   margin: 0;
 
@@ -62,15 +66,33 @@ a {
   letter-spacing: 0.06em;
 }
 
-
-/* -------------------------стили Хедера */
-
-.heder-conteyner{
-  width: 1200px;
+.container{
+  width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
+}
 
-  background-color: lightcoral;
+/* ---------------------стили Хедера */
+
+.page-heder{
+  padding: 0 215px;
+}
+
+.header-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+  padding: 25px 15px;
+
+  /* background-color: lightcoral; */
+}
+
+.header-box > nav{
+  display: flex;
+  align-items: center;
+    
 }
 
 .logo {
@@ -86,6 +108,8 @@ a {
   color: var(--accent);
 }
 .list-nav {
+  display: flex;
+  
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -93,6 +117,20 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.list-nav >li {
+  margin-left: 50px;
+}
+
+.list-nav >li:first-child{
+  margin-left: 93px;
+}
+
+.list-nav .link{
+  padding: 32px 0;
+  /* min-width: 80px; */
+}
+
 .link {
   color: currentColor; 
 }
@@ -106,8 +144,21 @@ a {
   color: var(--accent);
 }
 
+.ause-nav {
+  display: flex;
+  
+} 
+
+.ause-nav >li{
+  margin-right: 50px;
+}
+
+.ause-nav >li:last-child{
+  margin-right: 0;
+}
+
 .ause-nav a {
-  color: var(--primary-text-color);
+    color: var(--primary-text-color);
 
   font-weight: 500;
   font-size: 14px;
@@ -117,10 +168,11 @@ a {
 
 
 
-/* стили main portfolio*/
-main {
+/* --------стили main portfolio*/
+
+/* main {
   background-color: var(--second-background-color);
-}
+} */
 
 .button-list {
   color: var(--title-text-color);
@@ -163,13 +215,11 @@ button {
 .hero-conteyner{
   text-align: center;
 
-  width: 1200px;
-  margin: 0 auto;
   min-height: 600px ;
-  padding: 200px 0;
+  padding: 200px 15px;
 
 
-  background-color: lightgreen;
+  /* background-color: lightgreen; */
 
 }
 
@@ -225,12 +275,27 @@ button {
 }
 
 .advantage-list{
-  background-color: burlywood;
+  /* background-color: burlywood; */
   margin: 94px auto;
-  width: 1200px;
+  width: 1230px;
   
 }
+
+.advantage_list{
+  display: flex;
+}
+
+.advantage_list >li{
+  margin-right: 30px;
+}
+
+.advantage_list >li:last-child{
+  margin-right: 0;
+}
+
 .advantage-title{
+
+  margin-bottom: 10px;
 
   font-size: 14px;
   line-height: 1.14;
@@ -249,15 +314,26 @@ button {
 /* ------------------чем мы занимаемся */
 
 .work{
-  background-color: limegreen;
+  /* background-color: limegreen; */
   margin: 94px auto;
-  width: 1200px;
+  width: 1230px;
 }
 
-.work-list > li{
-  margin-top: 50px;
+.work-list{
+  display: flex;
+  justify-content: center;
+}
 
-  display: inline-block;
+.work-list >li{
+    margin-right: 30px;
+}
+
+.work-list >li:last-child {
+  margin-right: 0;
+}
+
+.our_work{
+  margin-bottom: 50px;
 }
 
 .our_work,
@@ -271,16 +347,31 @@ button {
 
 /* -----------------наша команда */
 
-.team{
-  background-color: limegreen;
-  margin: 94px auto;
-  width: 1200px;
+.team_section{
+  background-color: var(--second-background-color);
+  padding: 94px 215px;
 }
 
-.team_list{
-  display: inline-block;
-  margin-top: 50px;
+.team{
+  /* background-color: limegreen; */
+  
+}
 
+.our_team {
+  margin-bottom: 50px;
+}
+
+.team >.list {
+  display: flex;
+  justify-content: center;
+  
+}
+.team_list{
+  margin-right: 30px;
+}
+
+.team_list:last-child{
+  margin-right: 0;
 }
 
 
@@ -290,7 +381,14 @@ button {
   line-height: 1.18;
   letter-spacing: 0.03em;
 
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  text-align: center;
+}
+
+.team_title_stile{
+  background-color: var(--primary-background-color);
+  text-align: center;
+  padding: 30px 0;
 }
 
 .team-text{
@@ -298,6 +396,8 @@ button {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+
+  margin-top: 10px;
 }
 
 
@@ -306,11 +406,6 @@ button {
 footer {
   background-color: var(--third-background-color);
   padding: 60px;
-}
-
-.footer_box{
-  margin: 0 auto;
-  width: 1200px
 }
 
 .logo-footer{
