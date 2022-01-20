@@ -67,12 +67,16 @@ a {
 }
 
 .container{
-  width: 1230px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 /* ------------------стили Хедера */
+
+.page_heder{
+border: 1px solid #ECECEC;
+}
 
 .header-box{
   display: flex;
@@ -197,7 +201,7 @@ a {
 }
 
 .hero-button{
-  margin-top: 20px;
+  margin-top: 30px;
 
   background-color: var(--accent);
   color: #ffffff;
@@ -219,6 +223,7 @@ a {
 
 .advantage{
   background-color: #ffffff;
+  padding: 94px 0;
 }
 
 .visually-hidden {
@@ -236,7 +241,7 @@ a {
 
 .advantage-list{
   /* background-color: burlywood; */
-  margin: 94px auto;
+  /* margin: 94px auto; */
   width: 1230px;
   
 }
@@ -275,8 +280,8 @@ a {
 
 .work{
   /* background-color: limegreen; */
-  margin: 94px auto;
-  width: 1230px;
+  margin: 0px auto;
+  padding-bottom: 94px;
 }
 
 .work-list{
@@ -346,7 +351,6 @@ a {
 }
 
 .team_title_stile{
-  display: inline;
   text-align: center;
   padding: 30px 0;
 
@@ -387,13 +391,14 @@ a {
   margin-right: 8px;
 }
 .button-list button {
+
+  border-radius: 4px;
+  padding: 6px 22px;
   
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: 0.03em;
-
-  border-radius: 4px;
 
   cursor: pointer;
 }
@@ -448,7 +453,7 @@ button {
 /* --------------------Подвал -----------------------------------------------*/
 footer {
   background-color: var(--third-background-color);
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .logo-footer{
