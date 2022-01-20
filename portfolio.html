@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+            integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
+
     <!-- Хедер -->
     <header class="page-heder">
         <div class="header-box container">
@@ -34,73 +35,96 @@
 
     <!-- Основной контент -->
     <main>
-        <section>
-            <h1 class="page-title title">Портфолио</h1>
-            <!-- Фильтрация запроса -->
-            <ul class="button-list list">
-                <li><button type="button">Все</button></li>
-                <li><button type="button">Веб-сайт</button></li>
-                <li><button type="button">Приложения</button></li>
-                <li><button type="button">Дизайн</button></li>
-                <li><button type="button">Маркетинг</button></li>
-            </ul>
+        <section class="maim_information">
+            <div class="container">
+                <h1 class="visually-hidden title">Портфолио</h1>
+                <!-- Фильтрация запроса -->
+                <ul class="button-list list">
+                    <li><button type="button">Все</button></li>
+                    <li><button type="button">Веб-сайт</button></li>
+                    <li><button type="button">Приложения</button></li>
+                    <li><button type="button">Дизайн</button></li>
+                    <li><button type="button">Маркетинг</button></li>
+                </ul>
+            </div>
             <!-- Карточки с фото -->
-            <ul class="list">
-                <li> 
-                    <a href="#"> <img src="./images/portfolio1.jpg" alt="ноутбук с изображением сайта" width="370" height="294">
-                    <h2 class="title">Технокряк</h2>
-                    <p class="cards-text">Веб-сайт</p> 
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/portfolio2.jpg" alt="два баскетболиста борются за мяч" width="370" height="294">
-                    <h2 class="title">Постер New Orlean vs Golden Star</h2>
-                    <p class="cards-text">Дизайн</p> 
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/portfolio3.jpg" alt="логотип с изображением рыбы" width="370" height="294">
-                    <h2 class="title">Ресторан Seafood</h2>
-                    <p class="cards-text">Приложение</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/portfolio4.jpg" alt="изображены наушники" width="370" height="294">
-                    <h2 class="title">Проект Prime</h2>
-                    <p class="cards-text">Маркетинг</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/portfolio5.jpg" alt="изображены: серая и рыжая коробки" width="370" height="294">
-                    <h2 class="title">Проект Boxes</h2>
-                    <p class="cards-text">Приложение</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/portfolio6.jpg" alt="экран с изображением сайта" width="370" height="294">
-                    <h2 class="title">Inspiration has no Borders</h2>
-                    <p class="cards-text">Веб-сайт</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/portfolio7.jpg" alt="изображена книга с фото-колажем" width="370" height="294">
-                    <h2 class="title">Издание Limited Edition</h2>
-                    <p class="cards-text">Дизайн</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/portfolio8.jpg" alt="Этикетка с дизайном" width="370" height="294">
-                    <h2 class="title">Проект LAB</h2>
-                    <p class="cards-text">Маркетинг</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#"><img src="./images/portfolio9.jpg" alt="ноутбук с главной страницей приложения" width="370" height="294">
-                    <h2 class="title">Growing Business</h2>
-                    <p class="cards-text">Приложение</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="product_list list">
+                    <li>
+                        <a href="#" class="product_link"> <img src="./images/portfolio1.jpg" alt="ноутбук с изображением сайта" width="370" height="294">
+                            <div class="product_text_box">
+                                <h2 class="title">Технокряк</h2>
+                                <p class="cards-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/portfolio2.jpg" alt="два баскетболиста борются за мяч" width="370" height="294">
+                            <div class="product_text_box">
+                                <h2 class="title">Постер New Orlean vs Golden Star</h2>
+                                <p class="cards-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/portfolio3.jpg" alt="логотип с изображением рыбы" width="370" height="294">
+                            <div class="product_text_box">
+                                <h2 class="title">Ресторан Seafood</h2>
+                                <p class="cards-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/portfolio4.jpg" alt="изображены наушники" width="370" height="294">
+                            <div class="product_text_box">
+                                <h2 class="title">Проект Prime</h2>
+                                <p class="cards-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/portfolio5.jpg" alt="изображены: серая и рыжая коробки" width="370" height="294">
+                            <div class="product_text_box">
+                                <h2 class="title">Проект Boxes</h2>
+                                <p class="cards-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/portfolio6.jpg" alt="экран с изображением сайта" width="370" height="294">
+                            <div class="product_text_box">
+                                <h2 class="title">Inspiration has no Borders</h2>
+                                <p class="cards-text">Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/portfolio7.jpg" alt="изображена книга с фото-колажем" width="370" height="294">
+                            <div class="product_text_box">
+                                <h2 class="title">Издание Limited Edition</h2>
+                            <p class="cards-text">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/portfolio8.jpg" alt="Этикетка с дизайном" width="370" height="294">
+                            <div class="product_text_box">
+                                <h2 class="title">Проект LAB</h2>
+                            <p class="cards-text">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="./images/portfolio9.jpg" alt="ноутбук с главной страницей приложения" width="370"
+                                height="294">
+                            <div class="product_text_box">
+                                <h2 class="title">Growing Business</h2>
+                            <p class="cards-text">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 

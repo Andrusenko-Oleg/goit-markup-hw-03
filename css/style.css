@@ -72,11 +72,7 @@ a {
   padding: 0 15px;
 }
 
-/* ---------------------стили Хедера */
-
-.page-heder{
-  padding: 0 215px;
-}
+/* ------------------стили Хедера */
 
 .header-box{
   display: flex;
@@ -168,45 +164,9 @@ a {
 
 
 
-/* --------стили main portfolio*/
-
-/* main {
-  background-color: var(--second-background-color);
-} */
-
-.button-list {
-  color: var(--title-text-color);
-}
-
-.button-list button {
-  
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-
-  cursor: pointer;
-}
-
-.button-list button:hover,
-.button-list button:focus {
-  color: #ffffff;
-  background-color: var(--accent);
-}
-
-button {
-    border: none;
-    font-family: inherit;
-}
-
-.cards-text{
-  color: var(--primary-text-color);
-}
 
 
-
-
-/*----------------- стили main index */
+/*--------------- стили main index ------------------*/
 
 .hero{
   background-color: #2F303A;
@@ -311,7 +271,7 @@ button {
 }
 
 
-/* ------------------чем мы занимаемся */
+/* ---------чем мы занимаемся */
 
 .work{
   /* background-color: limegreen; */
@@ -349,7 +309,7 @@ button {
 
 .team_section{
   background-color: var(--second-background-color);
-  padding: 94px 215px;
+  padding: 94px 0;
 }
 
 .team{
@@ -386,9 +346,15 @@ button {
 }
 
 .team_title_stile{
-  background-color: var(--primary-background-color);
+  display: inline;
   text-align: center;
   padding: 30px 0;
+
+  background-color:  var(--primary-background-color);
+}
+
+.product_text_box{
+  padding: 20px 24px;
 }
 
 .team-text{
@@ -401,8 +367,85 @@ button {
 }
 
 
+/* --------------------стили main portfolio*-------------------------------*/
+.maim_information{
+  margin-bottom: 94px;
+}
 
-/* ---------------------------Подвал */
+.button-list {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 97px;
+  margin-bottom: 50px;
+
+  color: var(--title-text-color);
+
+}
+
+.button-list >li:not(:last-child){
+  margin-right: 8px;
+}
+.button-list button {
+  
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.button-list button:hover,
+.button-list button:focus {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+
+button {
+    border: none;
+    font-family: inherit;
+}
+
+/* -----------------------галнрея продуктов--------------------- */
+.product_list{
+  display: flex;
+  flex-wrap: wrap;
+ 
+  /* background-color: aquamarine; */
+}
+
+.product_list >li{
+  /* width: calc(100% / 3 - 30px); */
+
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.product_list >li:nth-child(3n){
+  margin-right: 0px;
+}
+
+.product_list >li:nth-child(n+7){
+  margin-bottom: 0;
+}
+
+
+
+.product_link{
+
+}
+
+.cards-text{
+  color: var(--primary-text-color);
+}
+
+
+
+
+/* --------------------Подвал -----------------------------------------------*/
 footer {
   background-color: var(--third-background-color);
   padding: 60px;
