@@ -81,7 +81,7 @@ p{
 }
 
 .section{
-  padding: 94px 0;
+  padding: 94px;
 }
 
 /* --------------Стили Хедера ----------------*/
@@ -229,6 +229,10 @@ padding: 25px 0;
 }
 /* -----------Преимущества компании */
 
+.advantage_section{
+  padding: 94px 0 0 0 ;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -280,7 +284,6 @@ padding: 25px 0;
 .work{
   /* background-color: limegreen; */
   margin: 0px auto;
-  padding-bottom: 94px;
 }
 
 .work-list{
@@ -313,6 +316,7 @@ padding: 25px 0;
 
 .team_section{
   background-color: var(--second-background-color);
+  padding-bottom: 94px;
 }
 .team{
   /* background-color: limegreen; */
@@ -370,7 +374,7 @@ padding: 25px 0;
 
 /* --------------------стили main portfolio*-------------------------------*/
 .maim_information{
-  margin: 94px 0;
+  padding: 94px 0;
 }
 
 .button-list {
