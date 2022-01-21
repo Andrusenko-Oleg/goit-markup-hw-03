@@ -14,6 +14,10 @@
 /* акцент #2196F3 */
 /* цвет футера #2F303A */
 
+
+
+/* ---------------Обнуление визуала---------- */
+
 html{
   box-sizing: border-box;
 }
@@ -40,6 +44,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -50,13 +58,13 @@ p{
   padding: 0;
 }
 
+
+/* ----------Универсальные классы----------- */
+
 .list {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
 
 .title {
   color: var(--title-text-color);
@@ -72,10 +80,15 @@ a {
   padding: 0 15px;
 }
 
-/* ------------------стили Хедера */
+.section{
+  padding: 94px 0;
+}
+
+/* --------------Стили Хедера ----------------*/
 
 .page_heder{
 border: 1px solid #ECECEC;
+padding: 25px 0;
 }
 
 .header-box{
@@ -83,10 +96,6 @@ border: 1px solid #ECECEC;
   align-items: center;
   justify-content: space-between;
 
-  
-  padding: 25px 15px;
-
-  /* background-color: lightcoral; */
 }
 
 .header-box > nav{
@@ -181,8 +190,7 @@ border: 1px solid #ECECEC;
 
   min-height: 600px ;
   padding: 200px 15px;
-
-
+  
   /* background-color: lightgreen; */
 
 }
@@ -221,11 +229,6 @@ border: 1px solid #ECECEC;
 }
 /* -----------Преимущества компании */
 
-.advantage{
-  background-color: #ffffff;
-  padding: 94px 0;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -239,12 +242,6 @@ border: 1px solid #ECECEC;
   overflow: hidden;
 }
 
-.advantage-list{
-  /* background-color: burlywood; */
-  /* margin: 94px auto; */
-  width: 1230px;
-  
-}
 
 .advantage_list{
   display: flex;
@@ -252,6 +249,8 @@ border: 1px solid #ECECEC;
 
 .advantage_list >li{
   margin-right: 30px;
+  width: 270px;
+
 }
 
 .advantage_list >li:last-child{
@@ -314,9 +313,7 @@ border: 1px solid #ECECEC;
 
 .team_section{
   background-color: var(--second-background-color);
-  padding: 94px 0;
 }
-
 .team{
   /* background-color: limegreen; */
   
@@ -373,14 +370,13 @@ border: 1px solid #ECECEC;
 
 /* --------------------стили main portfolio*-------------------------------*/
 .maim_information{
-  margin-bottom: 94px;
+  margin: 94px 0;
 }
 
 .button-list {
   display: flex;
   justify-content: center;
 
-  margin-top: 97px;
   margin-bottom: 50px;
 
   color: var(--title-text-color);
@@ -458,6 +454,8 @@ footer {
 
 .logo-footer{
   color: #ffffff;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-main-link{
@@ -473,4 +471,12 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
+}
+
+.footer-list >li{
+  display: block;
+}
+
+.footer-list >li:not(:first-child){
+  margin-top: 9px;
 }
